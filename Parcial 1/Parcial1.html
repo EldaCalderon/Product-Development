@@ -1,0 +1,280 @@
+<html class=""><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">json2[2014.02.04];jquery[3.5.1];shiny[1.5.0];htmlwidgets[1.5.2];datatables-css[0.0.0];datatables-binding[0.16];crosstalk[1.1.0.1];selectize[0.11.2];bootstrap-datepicker[1.6.4];bootstrap[3.4.1]</script>
+<script src="shared/json2-min.js"></script>
+<script src="shared/jquery.min.js"></script>
+<link href="shared/shiny.css" rel="stylesheet">
+<script src="shared/shiny.min.js"></script>
+<script src="htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<link href="datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="datatables-binding-0.16/datatables.js"></script>
+<link href="crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet">
+<script src="crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="shared/selectize/css/selectize.bootstrap3.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="shared/selectize/js/es5-shim.min.js"></script>
+<![endif]-->
+<script src="shared/selectize/js/selectize.min.js"></script>
+<link href="shared/datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+<script src="shared/datepicker/js/bootstrap-datepicker.min.js"></script>
+<script>
+(function() {
+  var datepicker = $.fn.datepicker.noConflict();
+  $.fn.bsDatepicker = datepicker;
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="shared/bootstrap/js/bootstrap.min.js"></script>
+<script src="shared/bootstrap/shim/html5shiv.min.js"></script>
+<script src="shared/bootstrap/shim/respond.min.js"></script>  <title>Dashboard Academatica</title>
+<link rel="stylesheet" type="text/css" href="dt-core-1.10.20/css/jquery.dataTables.min.css"><link rel="stylesheet" type="text/css" href="dt-core-1.10.20/css/jquery.dataTables.extra.css"><script src="dt-core-1.10.20/js/jquery.dataTables.min.js"></script></head>
+<body>
+  <div class="container-fluid">
+    <h2>Dashboard Academatica</h2>
+    <div class="tabbable">
+      <ul class="nav nav-tabs" data-tabsetid="4838">
+        <li class="active">
+          <a href="#tab-4838-1" data-toggle="tab" data-value="Tablas">Tablas</a>
+        </li>
+        <li>
+          <a href="#tab-4838-2" data-toggle="tab" data-value="Metadatos">Metadatos</a>
+        </li>
+        <li>
+          <a href="#tab-4838-3" data-toggle="tab" data-value="Estadisticas">Estadisticas</a>
+        </li>
+        <li>
+          <a href="#tab-4838-4" data-toggle="tab" data-value="Fechas">Fechas</a>
+        </li>
+      </ul>
+      <div class="tab-content" data-tabsetid="4838">
+        <div class="tab-pane active" data-value="Tablas" id="tab-4838-1">
+          <h3>Tabla de Datos 1</h3>
+          <hr>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="tabla1" style="width:100%; height:auto; " class="datatables html-widget html-widget-output shiny-bound-output"><div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="DataTables_Table_0"></label></div><div id="DataTables_Table_0_processing" class="dataTables_processing" style="display: none;">Processing...</div><table class="display dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+  <thead>
+    <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" aria-label=" "> </th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="videoID: activate to sort column ascending">videoID</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="viewCount: activate to sort column ascending">viewCount</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="likeCount: activate to sort column ascending">likeCount</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="dislikeCount: activate to sort column ascending">dislikeCount</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="favoriteCount: activate to sort column ascending">favoriteCount</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="commentCount: activate to sort column ascending">commentCount</th></tr>
+  </thead>
+<tbody><tr role="row" class="odd"><td>1</td><td>_2AqkIL0Obs</td><td class=" dt-right">5800</td><td class=" dt-right">80</td><td class=" dt-right">1</td><td class=" dt-right">0</td><td class=" dt-right">5</td></tr><tr role="row" class="even"><td>2</td><td>_6JsEhMMyao</td><td class=" dt-right">369</td><td class=" dt-right">22</td><td class=" dt-right">1</td><td class=" dt-right">0</td><td class=" dt-right">0</td></tr><tr role="row" class="odd"><td>3</td><td>_cVKho9_Bx8</td><td class=" dt-right">42108</td><td class=" dt-right">171</td><td class=" dt-right">6</td><td class=" dt-right">0</td><td class=" dt-right">30</td></tr><tr role="row" class="even"><td>4</td><td>_lsEhHCYqnw</td><td class=" dt-right">114644</td><td class=" dt-right">1089</td><td class=" dt-right">20</td><td class=" dt-right">0</td><td class=" dt-right">71</td></tr><tr role="row" class="odd"><td>5</td><td>_NznBOBEPeg</td><td class=" dt-right">1383</td><td class=" dt-right">6</td><td class=" dt-right">0</td><td class=" dt-right">0</td><td class=" dt-right">0</td></tr><tr role="row" class="even"><td>6</td><td>_pAnRc1vKqY</td><td class=" dt-right">18468</td><td class=" dt-right">84</td><td class=" dt-right">6</td><td class=" dt-right">0</td><td class=" dt-right">7</td></tr><tr role="row" class="odd"><td>7</td><td>_YVyheaWL5k</td><td class=" dt-right">5477</td><td class=" dt-right">33</td><td class=" dt-right">2</td><td class=" dt-right">0</td><td class=" dt-right">6</td></tr><tr role="row" class="even"><td>8</td><td>_ZEuaGf0jpU</td><td class=" dt-right">27005</td><td class=" dt-right">102</td><td class=" dt-right">10</td><td class=" dt-right">0</td><td class=" dt-right">4</td></tr><tr role="row" class="odd"><td>9</td><td>-1q-1RrZE00</td><td class=" dt-right">16606</td><td class=" dt-right">92</td><td class=" dt-right">53</td><td class=" dt-right">0</td><td class=" dt-right">12</td></tr><tr role="row" class="even"><td>10</td><td>-2WTs-eD6JE</td><td class=" dt-right">85798</td><td class=" dt-right">445</td><td class=" dt-right">106</td><td class=" dt-right">0</td><td class=" dt-right">75</td></tr></tbody></table><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 860 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="-1" id="DataTables_Table_0_previous">Previous</a><span><a class="paginate_button current" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="5" tabindex="0">5</a><span class="ellipsis">…</span><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="6" tabindex="0">86</a></span><a class="paginate_button next" aria-controls="DataTables_Table_0" data-dt-idx="7" tabindex="0" id="DataTables_Table_0_next">Next</a></div></div></div>
+            </div>
+          </div>
+          <h3>Tabla de Datos 2</h3>
+          <hr>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="tabla2" style="width:100%; height:auto; " class="datatables html-widget html-widget-output shiny-bound-output"><div id="DataTables_Table_1_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="DataTables_Table_1_length"><label>Show <select name="DataTables_Table_1_length" aria-controls="DataTables_Table_1" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="DataTables_Table_1_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="DataTables_Table_1"></label></div><div id="DataTables_Table_1_processing" class="dataTables_processing" style="display: none;">Processing...</div><table class="display dataTable no-footer" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+  <thead>
+    <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" aria-label=" "> </th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="kind: activate to sort column ascending">kind</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="etag: activate to sort column ascending">etag</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="id: activate to sort column ascending">id</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="contentVideoID: activate to sort column ascending">contentVideoID</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="details: activate to sort column ascending">details</th></tr>
+  </thead>
+<tbody><tr role="row" class="odd"><td>1</td><td>youtube#playlistItem</td><td>hZNs_n6Zc8SdkkcL5pNRXvAagjs</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Ll8yQXFrSUwwT2Jz</td><td>_2AqkIL0Obs</td><td>2013-07-12T14:17:06Z</td></tr><tr role="row" class="even"><td>2</td><td>youtube#playlistItem</td><td>BZqVEWuwzYS0BA_6mDb8LIMx3O0</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Ll82SnNFaE1NeWFv</td><td>_6JsEhMMyao</td><td>2020-07-09T13:00:42Z</td></tr><tr role="row" class="odd"><td>3</td><td>youtube#playlistItem</td><td>J2RsyonCDCxfWbaIOdIyGgg_aew</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Ll9jVktobzlfQng4</td><td>_cVKho9_Bx8</td><td>2011-03-18T16:20:05Z</td></tr><tr role="row" class="even"><td>4</td><td>youtube#playlistItem</td><td>AcApEdpGCiDq7p-gslGsUKwKgbI</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Ll9sc0VoSENZcW53</td><td>_lsEhHCYqnw</td><td>2013-01-13T18:06:20Z</td></tr><tr role="row" class="odd"><td>5</td><td>youtube#playlistItem</td><td>IwIKIUDy16koVNq7mjCwEEGJv7M</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Ll9Oem5CT0JFUGVn</td><td>_NznBOBEPeg</td><td>2013-08-11T15:54:51Z</td></tr><tr role="row" class="even"><td>6</td><td>youtube#playlistItem</td><td>uG-s8xuWwGcoTVXOfWvF-REGadw</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Ll9wQW5SYzF2S3FZ</td><td>_pAnRc1vKqY</td><td>2011-05-26T14:44:40Z</td></tr><tr role="row" class="odd"><td>7</td><td>youtube#playlistItem</td><td>SBCF6qmpzLZ7_uT6eaX6GcGVjVU</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Ll9ZVnloZWFXTDVr</td><td>_YVyheaWL5k</td><td>2014-02-16T23:59:40Z</td></tr><tr role="row" class="even"><td>8</td><td>youtube#playlistItem</td><td>3d6SN_1byIpFSQrlILPREomB6mw</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Ll9aRXVhR2YwanBV</td><td>_ZEuaGf0jpU</td><td>2009-08-06T15:33:46Z</td></tr><tr role="row" class="odd"><td>9</td><td>youtube#playlistItem</td><td>SOSgcNcJeBw05g6xk5SPISWj_7o</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Li0xcS0xUnJaRTAw</td><td>-1q-1RrZE00</td><td>2013-07-11T17:19:50Z</td></tr><tr role="row" class="even"><td>10</td><td>youtube#playlistItem</td><td>IsrbQe4IcdcXr1GTxEfkxowWLhs</td><td>VVUyRW5JX0kyX1NEcFRfV1lYRXNsVWl3Li0yV1RzLWVENkpF</td><td>-2WTs-eD6JE</td><td>2013-10-16T01:09:55Z</td></tr></tbody></table><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">Showing 1 to 10 of 862 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_1" data-dt-idx="0" tabindex="-1" id="DataTables_Table_1_previous">Previous</a><span><a class="paginate_button current" aria-controls="DataTables_Table_1" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="DataTables_Table_1" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="DataTables_Table_1" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="DataTables_Table_1" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="DataTables_Table_1" data-dt-idx="5" tabindex="0">5</a><span class="ellipsis">…</span><a class="paginate_button " aria-controls="DataTables_Table_1" data-dt-idx="6" tabindex="0">87</a></span><a class="paginate_button next" aria-controls="DataTables_Table_1" data-dt-idx="7" tabindex="0" id="DataTables_Table_1_next">Next</a></div></div></div>
+            </div>
+          </div>
+          <h3>Tabla de Datos 3</h3>
+          <hr>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="tabla3" style="width:100%; height:auto; " class="datatables html-widget html-widget-output shiny-bound-output"><div id="DataTables_Table_2_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="DataTables_Table_2_length"><label>Show <select name="DataTables_Table_2_length" aria-controls="DataTables_Table_2" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="DataTables_Table_2_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="DataTables_Table_2"></label></div><div id="DataTables_Table_2_processing" class="dataTables_processing" style="display: none;">Processing...</div><table class="display dataTable no-footer" id="DataTables_Table_2" role="grid" aria-describedby="DataTables_Table_2_info">
+  <thead>
+    <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" aria-label=" "> </th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="videoID: activate to sort column ascending">videoID</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="title: activate to sort column ascending">title</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="description: activate to sort column ascending">description</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="iframe: activate to sort column ascending">iframe</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="link: activate to sort column ascending">link</th></tr>
+  </thead>
+<tbody><tr role="row" class="odd"><td>1</td><td>_2AqkIL0Obs</td><td>Relaciones Afines - Libro Stewart Capitulo 3 Seccion 9 Problema 33</td><td>Si se conectan dos resistencias R_1 y R_2 en paralelo, como se 
+ilustra en la figura, por lo tanto la resistencia total R, medida en
+ohm (Ω) es
+1/R = 1/R_1 + 1/R_2
+Si R_1 y R_2 se incrementan en propo</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_2AqkIL0Obs" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/_2AqkIL0Obs</td></tr><tr role="row" class="even"><td>2</td><td>_6JsEhMMyao</td><td>Introduccion a GGPLOT 2</td><td>En este taller aprenderemos el uso basico de la libreria ggplot 2 que nos servira para crear graficas en R.</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_6JsEhMMyao" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/_6JsEhMMyao</td></tr><tr role="row" class="odd"><td>3</td><td>_cVKho9_Bx8</td><td>Integrales Impropias</td><td>En este video doy la clase del tema de integrales impropias de primero y segundo genero con varios ejemplos 
+
+http://www.wikimatematica.org/index.php?title=Integrales_impropias_de_primer_g%C3%A9nero
+
+</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_cVKho9_Bx8" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/_cVKho9_Bx8</td></tr><tr role="row" class="even"><td>4</td><td>_lsEhHCYqnw</td><td>Usando trazas para graficar funciones en 3D</td><td>En este video explico como utilizar las trazas de una función de dos variables para hacer la grafica tridimensional de la función. Las trazas son las intersecciones de la superficie con los 3 planos c</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_lsEhHCYqnw" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/_lsEhHCYqnw</td></tr><tr role="row" class="odd"><td>5</td><td>_NznBOBEPeg</td><td>Diagramas de Flujo de Señal de las formas normales</td><td>En este video explico como hacer el diagrama de flujo de señal de la forma normal de frobenius, forma normal de Jordan y forma normal Canonica
+
+===Suscribete a nuestro canal en youtube===
+http://www.y</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_NznBOBEPeg" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/_NznBOBEPeg</td></tr><tr role="row" class="even"><td>6</td><td>_pAnRc1vKqY</td><td>Desigualdad del triángulo (Demostración)</td><td>www.academatica.com
+www.wikimatematica.org</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_pAnRc1vKqY" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/_pAnRc1vKqY</td></tr><tr role="row" class="odd"><td>7</td><td>_YVyheaWL5k</td><td>Función exponencial compleja. Propiedades</td><td>En este video demuestro varias propiedades de la función exponencial compleja.
+
+===Suscribete a nuestro canal en youtube===
+http://www.youtube.com/chzelada
+
+===Siguenos en Facebook===
+http://www.faceb</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_YVyheaWL5k" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/_YVyheaWL5k</td></tr><tr role="row" class="even"><td>8</td><td>_ZEuaGf0jpU</td><td>Serie de Taylor de la exponencial.</td><td>En este video demuestro como se genera la serie de Taylor para e^x (función exponencial). Toda la demostración es paso a paso muy fácil de entender.</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_ZEuaGf0jpU" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/_ZEuaGf0jpU</td></tr><tr role="row" class="odd"><td>9</td><td>-1q-1RrZE00</td><td>Relaciones Afines -  Libro Stewart Capitulo 3 sección 9 problema 27</td><td>Se entrega grava por medio de una cinta transportadora a razón de 30 pies cúbicos por minuto; las dimensiones de sus fragmentos permiten formar una pila en forma de cono cuyo diámetro y altura son sie</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-1q-1RrZE00" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/-1q-1RrZE00</td></tr><tr role="row" class="even"><td>10</td><td>-2WTs-eD6JE</td><td>Trabajo  Vaciado de tanques  Ejemplo 1</td><td>En es video resolveremos el problema de vaciar un tanque que los lados son triangulares y su separación entre ellos es de 8 metros.
+
+===Suscribete a nuestro canal en youtube===
+http://www.youtube.com/</td><td>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-2WTs-eD6JE" 
+frameborder="0" allow="accelerometer; autoplay; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/if</td><td>https://youtu.be/-2WTs-eD6JE</td></tr></tbody></table><div class="dataTables_info" id="DataTables_Table_2_info" role="status" aria-live="polite">Showing 1 to 10 of 860 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_2_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_2" data-dt-idx="0" tabindex="-1" id="DataTables_Table_2_previous">Previous</a><span><a class="paginate_button current" aria-controls="DataTables_Table_2" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="DataTables_Table_2" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="DataTables_Table_2" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="DataTables_Table_2" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="DataTables_Table_2" data-dt-idx="5" tabindex="0">5</a><span class="ellipsis">…</span><a class="paginate_button " aria-controls="DataTables_Table_2" data-dt-idx="6" tabindex="0">86</a></span><a class="paginate_button next" aria-controls="DataTables_Table_2" data-dt-idx="7" tabindex="0" id="DataTables_Table_2_next">Next</a></div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-value="Metadatos" id="tab-4838-2">
+          <h3>Metadatos del Video</h3>
+          <hr>
+          <div class="form-group shiny-input-container">
+            <label class="control-label" for="Select_Input1-selectized">Escoge un ID de video:</label>
+            <div>
+              <select id="Select_Input1" class="form-control selectized shiny-bound-input" tabindex="-1" style="display: none;"><option value="_2AqkIL0Obs" selected="selected">_2AqkIL0Obs</option></select><div class="selectize-control form-control single"><div class="selectize-input items full has-options has-items"><div class="item" data-value="_2AqkIL0Obs">_2AqkIL0Obs</div><input type="text" autocomplete="off" tabindex="" id="Select_Input1-selectized" style="width: 4px;"></div><div class="selectize-dropdown single form-control" style="display: none;"><div class="selectize-dropdown-content"></div></div></div>
+              <script type="application/json" data-for="Select_Input1">{}</script>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="tabla4" class="shiny-html-output shiny-bound-output"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-value="Estadisticas" id="tab-4838-3">
+          <h3>Estadisticas de los Videos</h3>
+          <hr>
+          <div id="Radio_Button1" class="form-group shiny-input-radiogroup shiny-input-container shiny-bound-input">
+            <label class="control-label" for="Radio_Button1">Escoge una estadistica:</label>
+            <div class="shiny-options-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Radio_Button1" value="Views">
+                  <span>Views</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Radio_Button1" value="Likes">
+                  <span>Likes</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Radio_Button1" value="Dislikes">
+                  <span>Dislikes</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Radio_Button1" value="Favorites">
+                  <span>Favorites</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Radio_Button1" value="Comments">
+                  <span>Comments</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Radio_Button1" value="General">
+                  <span>General</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="tabbable">
+            <ul class="nav nav-tabs shiny-tab-input shiny-bound-input" id="panel" data-tabsetid="9962">
+              <li class="" style="display: none;">
+                <a href="#tab-9962-1" data-toggle="tab" data-value="Views">Views</a>
+              </li>
+              <li style="display: none;">
+                <a href="#tab-9962-2" data-toggle="tab" data-value="Likes">Likes</a>
+              </li>
+              <li style="display: none;">
+                <a href="#tab-9962-3" data-toggle="tab" data-value="Dislikes">Dislikes</a>
+              </li>
+              <li style="display: none;">
+                <a href="#tab-9962-4" data-toggle="tab" data-value="Favorites">Favorites</a>
+              </li>
+              <li style="display: none;">
+                <a href="#tab-9962-5" data-toggle="tab" data-value="Comments">Comments</a>
+              </li>
+              <li style="display: none;">
+                <a href="#tab-9962-6" data-toggle="tab" data-value="General">General</a>
+              </li>
+            </ul>
+            <div class="tab-content" data-tabsetid="9962">
+              <div class="tab-pane" data-value="Views" id="tab-9962-1" style="display: none;">
+                <h3>Grafico Views</h3>
+                <hr>
+                <div id="grafica1" class="shiny-plot-output shiny-bound-output" style="width: 100% ; height: 400px"></div>
+              </div>
+              <div class="tab-pane" data-value="Likes" id="tab-9962-2" style="display: none;">
+                <h3>Grafico Likes</h3>
+                <hr>
+                <div id="grafica2" class="shiny-plot-output shiny-bound-output" style="width: 100% ; height: 400px"></div>
+              </div>
+              <div class="tab-pane" data-value="Dislikes" id="tab-9962-3" style="display: none;">
+                <h3>Grafico Dislikes</h3>
+                <hr>
+                <div id="grafica3" class="shiny-plot-output shiny-bound-output" style="width: 100% ; height: 400px"></div>
+              </div>
+              <div class="tab-pane" data-value="Favorites" id="tab-9962-4" style="display: none;">
+                <h3>Grafico Favorites</h3>
+                <hr>
+                <div id="grafica4" class="shiny-plot-output shiny-bound-output" style="width: 100% ; height: 400px"></div>
+              </div>
+              <div class="tab-pane" data-value="Comments" id="tab-9962-5" style="display: none;">
+                <h3>Grafico Comments</h3>
+                <hr>
+                <div id="grafica5" class="shiny-plot-output shiny-bound-output" style="width: 100% ; height: 400px"></div>
+              </div>
+              <div class="tab-pane" data-value="General" id="tab-9962-6" style="display: none;">
+                <h3>Grafico General de Estadisticas</h3>
+                <hr>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" for="Select_Input2-selectized">Escoge un ID de video:</label>
+                  <div>
+                    <select id="Select_Input2" class="form-control selectized shiny-bound-input" tabindex="-1" style="display: none;"><option value="_2AqkIL0Obs" selected="selected">_2AqkIL0Obs</option></select><div class="selectize-control form-control single"><div class="selectize-input items full has-options has-items"><div class="item" data-value="_2AqkIL0Obs">_2AqkIL0Obs</div><input type="text" autocomplete="off" tabindex="" id="Select_Input2-selectized" style="width: 4px;"></div><div class="selectize-dropdown single form-control" style="display: none;"><div class="selectize-dropdown-content"></div></div></div>
+                    <script type="application/json" data-for="Select_Input2">{}</script>
+                  </div>
+                </div>
+                <div id="grafica6" class="shiny-plot-output shiny-bound-output" style="width: 100% ; height: 400px"></div>
+                <pre id="texto2" class="shiny-text-output noplaceholder shiny-bound-output"></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-value="Fechas" id="tab-4838-4">
+          <h3>Informacion por fecha</h3>
+          <hr>
+          <div id="Date_Input1" class="shiny-date-input form-group shiny-input-container shiny-bound-input">
+            <label class="control-label" for="Date_Input1">Selecciona una fecha:</label>
+            <input type="text" class="form-control" data-date-language="es" data-date-week-start="1" data-date-format="yyyy-mm-dd" data-date-start-view="month" data-initial-date="2020-11-22" data-date-autoclose="true" data-date-dates-disabled="null" data-date-days-of-week-disabled="null">
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="tabla5" class="shiny-html-output shiny-bound-output"></div>
+            </div>
+          </div>
+          <pre id="texto1" class="shiny-text-output noplaceholder shiny-bound-output"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body></html>
