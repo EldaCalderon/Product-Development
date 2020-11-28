@@ -1,0 +1,12 @@
+name: Parcial2
+title: Parcial2
+username:
+account: eldacalderon
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3314079
+bundleId: 3917128
+url: https://eldacalderon.shinyapps.io/Parcial2/
+when: 1606600812.30919
+asMultiple: FALSE
+asStatic: FALSE
