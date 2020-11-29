@@ -1,3 +1,6 @@
 Link shinyapps.io
 
 http://eldacalderon.shinyapps.io/Parcial2
+
+** Cargar el dataset IHMStefanini_industrial_safety_and_health_database.csv
+al dashboard **
